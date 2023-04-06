@@ -159,7 +159,7 @@ if __name__ == "__main__":
         dallas_cnty_pop_hh = cnty_pop_per_household(counties, "Dallas")
 
         # print formatted population per household for Dallas county
-        print(f"Dallas County Population/Houshold: {dallas_cnty_pop_hh: .2f}")
+        print(f"Dallas County Population/Houshold: {dallas_cnty_pop_hh:.2f}")
 
         # test of __str__ method
         print(counties["Dallas"])
