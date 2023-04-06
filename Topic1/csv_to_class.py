@@ -72,22 +72,12 @@ class IowaCounty():
         self.self._num_of_hhold = num_of_hhold
 
     def __str__(self):
-        attributes = dir(self)
-        str_string = self.__class__.__name__ + "("
-        first = True
-        for attr in attributes:
-            if attr.startswith("__") and attr.endswith("__"):
-                continue
-            elif attr.startswith("set_") or attr.startswith("_"):
-                continue
-            if (first):
-                first = False
-            else:
-                str_string += ", "
-
-            str_string += attr + " = " + str(getattr(self, attr))
-
-        str_string += ")"
+        str_string = "IowaCounty(Rank: " + str(self._rank)
+        str_string += ", Per Capita Income: " + str(self._per_capita_income)
+        str_string += ", Med. Household Income: " + str(self._med_hhold_income)
+        str_string += ", Med. Family Income: " + str(self._med_fam_income)
+        str_string += ", Population: " + str(self._population)
+        str_string += ", Number of Households: " + str(self._num_of_hhold) + ")"
         return str_string
 
     def __repr__(self):
