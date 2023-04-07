@@ -55,6 +55,5 @@ class CustomerExceptionsTestCase(unittest.TestCase):
         self.assertEqual(self.customer.__str__(), '1234: Duck, Donald Phone: 515-555-1234')
 
 
-# Driver/ main()
-if __name__ == "__main__":
+if __name__ == '__main__':
     CustomerExceptionsTestCase.main()
